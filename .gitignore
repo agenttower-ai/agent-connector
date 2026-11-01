@@ -1,0 +1,12 @@
+node_modules/
+data/
+.env
+.env.*
+*.log
+.tooling/
+artifacts/
+agenttower
+agenttower.exe
+*.pem
+*.key
+.DS_Store

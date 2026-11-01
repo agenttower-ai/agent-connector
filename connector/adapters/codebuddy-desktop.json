@@ -1,0 +1,9 @@
+{
+  "name": "codebuddy-desktop",
+  "displayName": "AgentTower CodeBuddy Desktop Bridge",
+  "version": "0.1.0",
+  "publisher": "agenttower",
+  "engines": { "vscode": "^1.70.0" },
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"]
+}

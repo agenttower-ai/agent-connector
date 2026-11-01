@@ -1,0 +1,56 @@
+AgentTower License (MIT with Additional Attribution Terms)
+
+Copyright (c) 2026 AgentTower contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+------------------------------------------------------------------------
+Additional Attribution Terms / 标识保留补充条款
+
+The permission granted above is also subject to the following conditions:
+
+1. Preserve the existing AgentTower attribution in the Software's service
+   identifiers, including page titles, Server and User-Agent fields where
+   present. Do not remove, obscure, or replace the AgentTower attribution in
+   those identifiers. You may add your own product name or other information
+   alongside it. This does not require adding fields that do not already exist.
+2. Include this entire license, including these additional terms, in copies
+   or substantial portions of the Software and in redistributions of modified
+   versions. Attribution must not imply endorsement by the project authors.
+3. These terms do not require disclosure of your application source code or
+   publication of your modifications. Commercial use remains permitted subject
+   to this license. Third-party components retain their respective licenses.
+4. Exceptions require separate written permission from the relevant copyright
+   holders.
+
+中文说明（如与英文条款存在歧义，以英文条款为准）：
+
+上述许可同时受以下补充条件约束：
+
+1. 必须保留本软件服务标识中已有的 AgentTower 来源标识，包括已有的页面
+   title、Server、User-Agent 等字段中的 AgentTower 信息，不得移除、遮盖或
+   替换。可以并列添加自己的产品名称等信息；无需新增原本不存在的字段。
+2. 分发本软件、其实质部分或修改版本时，必须同时提供本许可全文及补充条款。
+   不得通过来源标识暗示项目作者为衍生产品背书。
+3. 本许可不要求公开使用者的业务源码或修改代码；在遵守本许可的前提下允许
+   商业使用。第三方组件仍按各自的许可证授权。
+4. 如需豁免补充条件，应另行取得相关著作权人的书面许可。
+
+This is a custom license with additional conditions, not the unmodified MIT
+license. / 本许可含额外条件，不是未经修改的标准 MIT 许可证。

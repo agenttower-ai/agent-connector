@@ -1,0 +1,172 @@
+{
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "1dbc9f206f32d15d5eb38365e2c7f239febc20cf9b2474ab7f32e2e4cd54a7ae"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "b5eb1abde4d0208aac59a666d01664a1b295d607de8b0b03f931138c9db009a4"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "ab233f21455b3e189f3a69acc2a6c5587dd3eb64924a7b2fe9fe3ec4ea95d445"
+    },
+    {
+      "path": "go.mod",
+      "sha256": "813851bdf94479a14f410ff7008b2ec714bbd08aa24640dccd511e7f75a9b4d8"
+    },
+    {
+      "path": "go.sum",
+      "sha256": "c2efd61327fbb5d287031e7e05bd3c61f563c02b325ec7edddc74e0e8e471dba"
+    },
+    {
+      "path": "connector/adapters.go",
+      "sha256": "61d8ede008f3b13a0af12e3d353c41e78c5b72ca64bf508af9a6d35310071da6"
+    },
+    {
+      "path": "connector/adapters_test.go",
+      "sha256": "8039fc23d014866aa0acd9a0f08acea5caa89b77ed38d4b98ccf3e99797c366a"
+    },
+    {
+      "path": "connector/codebuddy.go",
+      "sha256": "3e63c88860fb40b452ab31ee148fc95a3483982eadba7f7411644cf9b780d30f"
+    },
+    {
+      "path": "connector/codebuddy_desktop.go",
+      "sha256": "5e4b614535273b9115fdc162212932176489733ce2e5d371fe64dd1a83b2bd98"
+    },
+    {
+      "path": "connector/codebuddy_desktop_test.go",
+      "sha256": "97eb01299625d6e9aae8d6892bcd0e4bc8746638b7ab8aedf36d6f93b56571c5"
+    },
+    {
+      "path": "connector/codebuddy_live_test.go",
+      "sha256": "eeccd358c1035b9da0cfb9c8c3485cb8d5e5db49bc48fed35aa9d0aed410dc47"
+    },
+    {
+      "path": "connector/codebuddy_test.go",
+      "sha256": "f4358679c72dab36d039951630e40b4d6529e0b32baba684fd4801dc7d85757c"
+    },
+    {
+      "path": "connector/codebuddy_watch.go",
+      "sha256": "cf237b869f068738c13b4decf07132428795c76889a71ade86d8d9c4572458d1"
+    },
+    {
+      "path": "connector/codebuddy_watch_test.go",
+      "sha256": "bd6c6a6cfc140d17f8ace70dd244c70cff93a8c990b132e0771153527730cbb3"
+    },
+    {
+      "path": "connector/codex_appserver.go",
+      "sha256": "3cbcb545c958bedc11f63a86ed5680e086efcf8b20fd9d93501e2ea88a1bb677"
+    },
+    {
+      "path": "connector/codex_appserver_test.go",
+      "sha256": "1231af70c8272a8af5eb849ab54e0ae3eba3d597abf456352a40e26b0b63a1ae"
+    },
+    {
+      "path": "connector/codex_desktop.go",
+      "sha256": "de24d3670032f17f7360554e8564e6eb2141180bfa2ee1345f3420611485b18a"
+    },
+    {
+      "path": "connector/codex_desktop_test.go",
+      "sha256": "80df0e430d8eab371b30a3f8f192e5c7f6478d00c421f24d53cf21ea8db8e73e"
+    },
+    {
+      "path": "connector/cursor.go",
+      "sha256": "1ee30b4ce54aec740d8de6a9c5fdb80c7d23614263fab46066ccc741bac2accf"
+    },
+    {
+      "path": "connector/cursor_bridge.go",
+      "sha256": "e4c8def7f557e6fedd2d266921fdc2da9b34a805cffcf8aef1860d09299a31bb"
+    },
+    {
+      "path": "connector/cursor_bridge_test.go",
+      "sha256": "06a2097c3886212d59e2dc39511dd5b6ba997d13bc45b013e38382f334ee45aa"
+    },
+    {
+      "path": "connector/cursor_history.go",
+      "sha256": "581dba7d1ae1c1b4f4faf417c3be4d815d9128292d46e67ff9a14efabb01d4cd"
+    },
+    {
+      "path": "connector/cursor_history_test.go",
+      "sha256": "dce7ab335281f5fd0a5c3fc52e6d406504486678c3b71145d3954d2f3ab3be84"
+    },
+    {
+      "path": "connector/cursor_test.go",
+      "sha256": "e4b64638da0b31db7fa5844f089487bb46d6ac0fe54a6e4090dfbc768ef62149"
+    },
+    {
+      "path": "connector/forwarding.go",
+      "sha256": "87abdbdcc441e4d07efe01a43f6c2626889ac4c8fcff749a09a97a2ee07b985d"
+    },
+    {
+      "path": "connector/forwarding_test.go",
+      "sha256": "c57cb3eaee7095194397fffcdba0447cda456712f2146f50eeb9275f1a668cba"
+    },
+    {
+      "path": "connector/main.go",
+      "sha256": "460bb28322fc28875cc438449d5f9f9cfbff455dedc5b3a6a018fbb3f2c147e9"
+    },
+    {
+      "path": "connector/management.go",
+      "sha256": "d57e1f282bee6dfb8f66b369d02acb80379291d1bd9cdcc0411949515ba362b8"
+    },
+    {
+      "path": "connector/management_binding.go",
+      "sha256": "842d21c021c433343e35a08787b98b2c393bd0204a73d7e6c893119ee8ec462b"
+    },
+    {
+      "path": "connector/permission_memory.go",
+      "sha256": "2dc96f799be6ad6382f8a9c805f4260a77f5a76ed55488905ce76783b625ea3c"
+    },
+    {
+      "path": "connector/permission_memory_test.go",
+      "sha256": "11ecc54191027738692ecec2bb970bb4127244de9dc9963a2ea748fc7df423a8"
+    },
+    {
+      "path": "connector/setup.go",
+      "sha256": "10b11f0fcb723fe3d7925e75e3c81b059cec1a61ef0b52f2ce51625fd6b2ff69"
+    },
+    {
+      "path": "connector/setup_test.go",
+      "sha256": "1b36bf0fb7c47eda13370d268b8d8bb93bc67df0c75dfdfc6d9a11a4fc5930b2"
+    },
+    {
+      "path": "connector/state.go",
+      "sha256": "6f756d8be2cb3b7ec85592c5c3887e8f5e4b7f19b323b96bd79b055fc517456e"
+    },
+    {
+      "path": "connector/transport.go",
+      "sha256": "13e32c1eba8bb2ae8a8c31516fff9a7befb6f64f5d39f88069f07136095448a9"
+    },
+    {
+      "path": "connector/adapters/opencode.mjs",
+      "sha256": "8622cd41cfb5d66e93c274061d93fcc5cac7cfb125a1f7af646868723c19a139"
+    },
+    {
+      "path": "connector/adapters/deepseek-harness.mjs",
+      "sha256": "0559866be94204720cd84efbf9168938bc9311985176b8bb181964f2fc85c36a"
+    },
+    {
+      "path": "connector/adapters/codebuddy-desktop.js",
+      "sha256": "d375920c6b8ecf70c07c9fc42524e6aee3013b34daf6710e5d9629c5bd613e7b"
+    },
+    {
+      "path": "connector/adapters/codebuddy-desktop.json",
+      "sha256": "2ca0889e967eac34f1ab86de57ea97e77a9543ea4638ecf3edca79a81256c11a"
+    },
+    {
+      "path": "README.md",
+      "sha256": "22d942872785414795824cd21df47c7b04e8140c3038c969d3c8d369b478a337"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "ba64c853b07193ea1069b7782b12c6f0389043a7171c2fe4b68fb025317762bc"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "sha256": "80f47b879e36849ced7e21c89ebdd62e58e1e7e458fbbb051980a525e2d15af7"
+    }
+  ]
+}
