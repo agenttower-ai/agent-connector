@@ -158,7 +158,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "22d942872785414795824cd21df47c7b04e8140c3038c969d3c8d369b478a337"
+      "sha256": "ae5522d47f7d3d43152c5941577ff30ca6860828773135c18c65fb3d9671f727"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -167,6 +167,22 @@
     {
       "path": "THIRD_PARTY.md",
       "sha256": "80f47b879e36849ced7e21c89ebdd62e58e1e7e458fbbb051980a525e2d15af7"
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "f6ab0f239bc05990860fa8c67a178113e10783a820498d8bb1e3f8bcee6b7405"
+    },
+    {
+      "path": "docs/screenshots/overview.jpg",
+      "sha256": "8e724fe52e7c4eddf61ec65b69e503f17188bd181ad0f5b58043c8730d64c522"
+    },
+    {
+      "path": "docs/screenshots/access.jpg",
+      "sha256": "c6d1b9571b691676cde90e1c49c370068330eb9bbd7a072fdfdef175716e592c"
+    },
+    {
+      "path": "docs/screenshots/forwarding.jpg",
+      "sha256": "836f772de8cb27ab767b0934d36dbff5274d16f691534e96088217c01e8bbe48"
     }
   ]
 }
