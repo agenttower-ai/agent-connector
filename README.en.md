@@ -6,6 +6,10 @@
 
 AgentTower brings agent status, conversations and supported actions to a control client. This repository contains the **Go connector that runs on your computer**. It integrates Claude Code, Codex, Cursor, OpenCode, CodeBuddy and DeepSeek Harness, and connects them to a relay so you can follow work and handle supported approval requests away from your desk.
 
+## Downloads and releases
+
+Download prebuilt packages from [GitHub Releases](https://github.com/agenttower-ai/agent-connector/releases). See [release instructions](docs/RELEASING.md) for automated builds, platform support and signing. Configure your own relay server before use.
+
 ## Related projects
 
 | Project | Role |

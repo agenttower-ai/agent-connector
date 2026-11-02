@@ -10,3 +10,5 @@ agenttower.exe
 *.pem
 *.key
 .DS_Store
+dist/
+__pycache__/

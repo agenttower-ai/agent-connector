@@ -6,6 +6,10 @@
 
 AgentTower 把电脑上的 AI Agent 状态、会话和受支持的操作带到控制客户端。这个仓库是运行在电脑上的 **Go 连接器**：接入 Claude Code、Codex、Cursor、OpenCode、CodeBuddy 和 DeepSeek Harness，通过中转服务与客户端通信，让你在离开工位后仍能了解任务进展、处理支持远程审批的请求。
 
+## 下载与自动发版
+
+预编译安装包见 [GitHub Releases](https://github.com/agenttower-ai/agent-connector/releases)。平台支持、签名和自动发版步骤见 [发行说明](docs/RELEASING.md)。首次使用请配置自己的中转服务器。
+
 ## 关联项目
 
 | 项目 | 负责什么 |

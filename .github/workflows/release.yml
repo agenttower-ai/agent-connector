@@ -1,0 +1,90 @@
+name: Release Connector
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release tag (for example v0.2.15); must not already exist'
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: connector-release-${{ inputs.version || github.ref_name }}
+  cancel-in-progress: false
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - id: version
+        env:
+          VERSION: ${{ inputs.version || github.ref_name }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [[ "$VERSION" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.-]+)?$ ]] || exit 1
+          if gh release view "$VERSION" >/dev/null 2>&1; then
+            echo 'Release already exists; choose a new version.' >&2
+            exit 1
+          fi
+          if [[ '${{ github.event_name }}' == workflow_dispatch ]] && git ls-remote --exit-code --tags origin "refs/tags/$VERSION" >/dev/null 2>&1; then
+            echo 'Manual releases require a new tag. For an existing tag, rerun its original workflow.' >&2
+            exit 1
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-15]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff # v5
+        with:
+          go-version-file: go.mod
+      - run: go test ./connector -skip TestCodebuddyDesktopSessionsFromRealLayout -timeout 10m
+  build:
+    needs: [metadata, test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff # v5
+        with:
+          go-version-file: go.mod
+      - name: Build six platform archives and dependency notices
+        env:
+          VERSION: ${{ needs.metadata.outputs.version }}
+        run: python3 scripts/build_release.py "$VERSION"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: connector-release
+          path: dist/*
+          if-no-files-found: error
+  publish:
+    needs: [metadata, build]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: connector-release
+          path: dist
+      - name: Verify archives and publish atomically through a draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ needs.metadata.outputs.version }}
+        run: |
+          (cd dist && sha256sum --check SHA256SUMS.txt)
+          gh release create "$VERSION" --target "$GITHUB_SHA" --draft --title "AgentTower Connector $VERSION" --notes-file docs/RELEASE_NOTES.md
+          gh release upload "$VERSION" dist/*
+          if [[ "$VERSION" == *-* ]]; then
+            gh release edit "$VERSION" --draft=false --prerelease
+          else
+            gh release edit "$VERSION" --draft=false --latest
+          fi
